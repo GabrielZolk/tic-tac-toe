@@ -1,0 +1,46 @@
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(231, 1, 231), rgb(47, 0, 255));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+
+    h1 {
+        color: white;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+
+        span {
+            color: gold;
+        }
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    h2 {
+        margin-bottom: 5px;
+        color: gold;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 0px;
+}
+
+app-square {
+    border: 1px gray solid;
+    height: 200px;
+}

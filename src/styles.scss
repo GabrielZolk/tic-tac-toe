@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.player-x {
+    background-color: black;
+    color: white;
+}
+  
+.player-o {
+    background-color: white;
+    color: black;
+}
+
+.winning-square {
+    background-color: rgb(11, 233, 11);
+}

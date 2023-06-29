@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Current Player:
+    <span>
+      {{ player }}</span>
+  </h1>
+  <button *ngIf="winner || isDraw" (click)="newGame()">New game</button>
+  <h2 *ngIf="winner; else drawMessage">
+    Player '{{ winner }}' won the game!!! Congratulations
+  </h2>
+  <ng-template #drawMessage>
+    <h2 *ngIf="isDraw">
+      It's a draw! The game ended in a tie.
+    </h2>
+  </ng-template>
+
+
+  <main>
+    <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)" [isWinningSquare]="winningLine.includes(i)">
+
+    </app-square>
+  </main>
+</div>
